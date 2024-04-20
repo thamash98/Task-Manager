@@ -38,5 +38,53 @@ namespace TaskManager.Controllers
             return Ok(taskRequest);
         }
 
+        // GET: api/tasks/{id}
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<IActionResult> GetTask([FromRoute]int id)
+        {
+            var _task= await _context.Tasks.FirstOrDefaultAsync(e => e.Id == id);
+            if(_task != null)
+            {
+                return Ok(_task);
+            }
+            return NotFound();
+        }
+
+        // PUT: api/tasks/{id}
+        [HttpPut]
+        [Route("{id}")]
+        public async Task<IActionResult> UpdateTask(int id, TaskModel updateTask)
+        {
+            var _task = await _context.Tasks.FindAsync(id);
+
+            if(_task != null)
+            {
+                _task.Title = updateTask.Title;
+                _task.Description = updateTask.Description;
+                _task.DueDate = updateTask.DueDate;
+
+                await _context.SaveChangesAsync();
+                return Ok(_task);
+            }
+
+            return NotFound();
+        }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<IActionResult> DeleteTask(int id)
+        {
+            var _task = await _context.Tasks.FindAsync(id);
+            if (_task != null)
+            {
+                _context.Tasks.Remove(_task);
+                await _context.SaveChangesAsync();
+
+                return NoContent();
+            }
+            return NotFound();
+
+        }
     }
 }
