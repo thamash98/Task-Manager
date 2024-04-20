@@ -107,4 +107,9 @@ D:\TaskManager_Programous\TaskManager\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeA
 D:\TaskManager_Programous\TaskManager\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\TaskManager_Programous\TaskManager\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\TaskManager_Programous\TaskManager\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TaskManager_Programous\TaskManager\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\TaskManager_Programous\TaskManager\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+D:\TaskManager_Programous\TaskManager\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\TaskManager_Programous\TaskManager\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\TaskManager_Programous\TaskManager\obj\Debug\netcoreapp3.0\TaskManager.MvcApplicationPartsAssemblyInfo.cs
 D:\TaskManager_Programous\TaskManager\obj\Debug\netcoreapp3.0\TaskManager.MvcApplicationPartsAssemblyInfo.cache

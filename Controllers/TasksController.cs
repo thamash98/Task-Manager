@@ -23,12 +23,20 @@ namespace TaskManager.Controllers
 
         // GET: api/tasks
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TaskModel>>> GetTasks()
+        public async Task<ActionResult> GetTasks()
         {
             var taskList = await _context.Tasks.ToListAsync();
             return Ok(taskList);
         }
 
-        
+        // POST: api/tasks
+        [HttpPost]
+        public async Task<ActionResult> CreateTask([FromBody]TaskModel taskRequest)
+        {
+            await _context.Tasks.AddAsync(taskRequest);
+            await _context.SaveChangesAsync();
+            return Ok(taskRequest);
+        }
+
     }
 }
