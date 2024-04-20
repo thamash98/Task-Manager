@@ -5,7 +5,7 @@ namespace TaskManager.Data
 {
     public class TaskManagerDBContext : DbContext
     {
-        public TaskManagerDBContext(DbContextOptions options) : base(options)
+        public TaskManagerDBContext(DbContextOptions<TaskManagerDBContext> options) : base(options)
         {
         }
         public DbSet<Task> Tasks { get; set; }
