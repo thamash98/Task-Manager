@@ -1,0 +1,6 @@
+D:\TaskManager_Programous\TaskManager\obj\Debug\netcoreapp3.0\TaskManager.csprojAssemblyReference.cache
+D:\TaskManager_Programous\TaskManager\obj\Debug\netcoreapp3.0\staticwebassets\TaskManager.StaticWebAssets.Manifest.cache
+D:\TaskManager_Programous\TaskManager\obj\Debug\netcoreapp3.0\staticwebassets\TaskManager.StaticWebAssets.xml
+D:\TaskManager_Programous\TaskManager\obj\Debug\netcoreapp3.0\TaskManager.MvcApplicationPartsAssemblyInfo.cache
+D:\TaskManager_Programous\TaskManager\obj\Debug\netcoreapp3.0\TaskManager.AssemblyInfoInputs.cache
+D:\TaskManager_Programous\TaskManager\obj\Debug\netcoreapp3.0\TaskManager.AssemblyInfo.cs
