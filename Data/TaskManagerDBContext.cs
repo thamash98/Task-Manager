@@ -8,6 +8,6 @@ namespace TaskManager.Data
         public TaskManagerDBContext(DbContextOptions<TaskManagerDBContext> options) : base(options)
         {
         }
-        public DbSet<Task> Tasks { get; set; }
+        public DbSet<TaskModel> Tasks { get; set; }
     }
 }
