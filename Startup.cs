@@ -50,6 +50,8 @@ namespace TaskManager
             });
 
             app.UseRouting();
+            //we are allowing any origin (angular application) talk to our api
+            app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
             app.UseAuthorization();
 
